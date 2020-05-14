@@ -1,5 +1,7 @@
 import React from 'react';
 import Article from './Article';
+import * as Unko from './components/UnkoKusai'
+import Pugera from './components/Pugera';
 
 class Blog extends React.Component {
   constructor(props) {
@@ -44,6 +46,9 @@ componentWillUnmount() {
           toggle={() => this.togglePublished()}
           count={this.state.count}
         />
+        <Unko.Unko />
+        <Unko.Kusai />
+        <Pugera />
       </>
     )
   }
